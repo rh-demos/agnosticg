@@ -4,7 +4,7 @@ appName: &name sonarqube
 # default admin password
 account:
   username: admin
-  password: openshift
+  password: <your admin password>
   currentAdminPassword: admin
 
 # support an existing secret for admin credentials
