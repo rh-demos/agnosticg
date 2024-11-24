@@ -2,37 +2,32 @@ gitlab:
   email:
     address: "gitlab@example.com"
     displayName: "Jonkey Guan"
-    replyTo: "noreply@redhat.com"
+    replyTo: "noreply@example.com"
   smtp:
     enabled: "false"
     domain: "example.com"
-    host: "smtp.gitlab-gitlab.apps.hub.jonkey.cc"
+    host: "smtp.<your gitlab host>"
     port: "587"
     user: "gitlab"
     password: "gitlab"
   ssh:
-    host: "ssh.gitlab-gitlab.apps.hub.jonkey.cc"
+    host: "ssh.<<your gitlab host>>"
     port: "22"
-  rootPassword: openshift
-  host: gitlab-gitlab.apps.hub.jonkey.cc
+  rootPassword: <your gitlab root password>
+  host: <your gitlab host>
   https: "true"
-  rootEmail: "zeguan@redhat.com"
+  rootEmail: "root@example.com"
   keyBase:
     db: "0123456789"
     otp: "0123456789"
     secret: "0123456789"
   users:
-    password: openshift
+    password: <your gitlab user password>
     count: 2
   groups: []
-  # groups:
-  # - name: backstage
-  #   repo:
-  #   - name: software-templates
-  #     url: https://github.com/treddy08/software-templates.git
 
 postgresql:
   dbUser: gitlab
-  dbPassword: passw0rd
-  dbName: gitlab_production
+  dbPassword: <your git lab db password>
+  dbName: gitlab_db
 
