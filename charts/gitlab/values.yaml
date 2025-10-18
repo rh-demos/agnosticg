@@ -1,4 +1,5 @@
 gitlab:
+  image: "gitlab/gitlab-ce:16.0.4-ce.0"
   email:
     address: "gitlab@example.com"
     displayName: "Jonkey Guan"
@@ -22,6 +23,7 @@ gitlab:
     otp: "0123456789"
     secret: "0123456789"
   users:
+    base: user
     password: <your gitlab user password>
     count: 2
   groups: []
