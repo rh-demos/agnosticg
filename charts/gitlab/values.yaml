@@ -11,7 +11,7 @@ gitlab:
     user: "gitlab"
     password: "gitlab"
   ssh:
-    host: "ssh.<<your gitlab host>>"
+    host: "ssh.<your gitlab host>"
     port: "22"
   rootPassword: <your gitlab root password>
   host: <your gitlab host>
